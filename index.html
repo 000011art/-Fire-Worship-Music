@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire & Worship Music</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome (Ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --primary: #081c3b;
+            --secondary: #ffeb3b;
+            --white: #fff;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #f4f4f4;
+            color: var(--primary);
+        }
+
+        /* Menu */
+        nav {
+            background: var(--white);
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 10%;
+            border-bottom: 4px solid var(--primary);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .logo {
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+        }
+
+        /* Banner */
+        .hero {
+            height: 60vh;
+            background: linear-gradient(rgba(8,28,59,0.8), rgba(8,28,59,0.8)),
+                        url('https://images.unsplash.com/photo-1506157786151-b8491531f063');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 3.5rem;
+        }
+
+        .badge {
+            background: var(--secondary);
+            color: black;
+            padding: 4px 12px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        /* Grade */
+        .container { padding: 40px 10%; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: white;
+            border-bottom: 4px solid transparent;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .card:hover {
+            border-color: var(--secondary);
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content { padding: 15px; }
+
+        /* ========================= */
+        /* BARRA SOCIAL FLUTUANTE 🔥 */
+        /* ========================= */
+
+        .social-float-bar {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 999;
+        }
+
+        .float-item {
+            display: flex;
+            align-items: center;
+            background: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .icon-box {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+        }
+
+        .label {
+            padding: 0 15px;
+            white-space: nowrap;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .float-item:hover {
+            transform: scale(1.05);
+        }
+
+        .insta { background: linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5); }
+        .tiktok { background: #000; box-shadow: 0 0 15px #25F4EE; }
+
+        /* Responsivo */
+        @media(max-width: 768px){
+            .label { display: none; }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Fire & Worship Music</div>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="https://spotify.com" target="_blank">Ouça Agora</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div>
+            <span class="badge">NOVO ÁLBUM</span>
+            <h1>Fire & Worship Music</h1>
+            <p style="margin-top:15px;">O som que domina os palcos.</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- SOBRE A BANDA -->
+        <section style="margin-bottom:50px; text-align:center;">
+            <h2 style="font-family:'Oswald'; border-left:5px solid #081c3b; padding-left:10px; display:inline-block;">
+                NOSSA MISSÃO
+            </h2>
+    
+            <p style="margin-top:20px; font-size:1.1rem; max-width:800px; margin-left:auto; margin-right:auto; line-height:1.6;">
+                Somos uma banda gospel dedicada a manifestar a glória de Deus através do louvor e da adoração em comunhão.
+                Nosso propósito é claro: ser ponte para que vidas encontrem o caminho da salvação e do renovo em Cristo.
+            </p>
+    
+            <p style="margin-top:20px; font-weight:bold; font-size:1.1rem; color:#081c3b;">
+                📖 “Ide por todo o mundo e pregai o evangelho a toda criatura.”
+            </p>
+        </section>
+    
+        <!-- ÚLTIMOS MOMENTOS -->
+        <h2 style="font-family:'Oswald'; border-left:5px solid #081c3b; padding-left:10px;">
+            ÚLTIMOS MOMENTOS
+        </h2>
+    
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063" alt="Show">
+                <div class="card-content">
+                    <p>Momentos especiais da banda.</p>
+                </div>
+            </div>
+        </div>
+    
+    </main>
+
+    <!-- 🔥 BARRA SOCIAL -->
+    <div class="social-float-bar">
+        <a href="https://www.instagram.com/fire.worship.music.ofc" target="_blank" class="float-item insta">
+            <div class="icon-box"><i class="fa-brands fa-instagram"></i></div>
+            <span class="label">Instagram</span>
+        </a>
+
+        <a href="https://www.tiktok.com/@fire.worship.muis" target="_blank" class="float-item tiktok">
+            <div class="icon-box"><i class="fa-brands fa-tiktok"></i></div>
+            <span class="label">TikTok</span>
+        </a>
+    </div>
+
+</body>
+</html>
+<!-- OUÇA NO YOUTUBE -->
+<section class="platform-section">
+    <h2 style="font-family:'Oswald'; border-left:5px solid #081c3b; padding-left:10px; display:inline-block;">
+        OUÇA AGORA
+    </h2>
+
+    <div class="platform-buttons">
+        <a href="https://youtube.com/@fireworshipmuisc?si=TNyZ3-wE71Smtgv2" target="_blank" class="platform-btn youtube-btn">
+            <i class="fa-brands fa-youtube"></i>
+            Ouça no YouTube
+        </a>
+    </div>
+</section>
+<!-- LANÇAMENTO EM DESTAQUE -->
+<section class="highlight-release">
+
+    <div class="release-content">
+
+        <div class="release-info">
+            <h3>Novo Single: LIVRE EU SOU 🔥</h3>
+
+            <p>
+                Uma canção que carrega a essência do avivamento e declara
+                que o fogo do Espírito nunca se apagará.
+            </p>
+
+            <div class="release-buttons">
+
+                <a href="https://open.spotify.com/user/3177rzp64hxkarxitbswefevw4ta?si=s0rcXCp7SjiErCtQg-QMWA" target="_blank" class="spotify-release">
+                    <i class="fa-brands fa-spotify"></i>
+                    Ouça no Spotify
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- NOSSA VISÃO -->
+<section class="vision-section">
+
+    <h2 class="vision-title">NOSSA VISÃO</h2>
+
+    <div class="vision-grid">
+
+        <div class="vision-card">
+            <div class="vision-icon">🔥</div>
+            <h3>Levar o Fogo do Espírito</h3>
+            <p>
+                Manifestar a presença de Deus através do louvor,
+                despertando corações para um avivamento genuíno.
+            </p>
+        </div>
+
+        <div class="vision-card">
+            <div class="vision-icon">🌎</div>
+            <h3>Alcançar Nações</h3>
+            <p>
+                Expandir o evangelho além das fronteiras,
+                proclamando Cristo através da música.
+            </p>
+        </div>
+
+        <div class="vision-card">
+            <div class="vision-icon">🎵</div>
+            <h3>Restaurar Vidas</h3>
+            <p>
+                Usar o louvor como instrumento de cura,
+                transformação e renovo espiritual.
+            </p>
+        </div>
+
+    </div>
+<!-- RODAPÉ / CRÉDITOS -->
+<footer class="site-footer">
+    <p>
+        Desenvolvido por 
+        <a href="https://instagram.com/seu_perfil1" target="_blank">Matheus henrique</a> e 
+        <a href="https://instagram.com/seu_perfil2" target="_blank">Jorge toledo</a>
+    </p>
+    <p>© 2026 Fire & Worship Music</p>
+</footer>

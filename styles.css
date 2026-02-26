@@ -1,0 +1,171 @@
+/* ========================= */
+/* BOTÕES DE PLATAFORMAS 🎵 */
+/* ========================= */
+
+.platform-section {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.platform-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.platform-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.youtube-btn {
+    background: #FF0000;
+}
+
+.youtube-btn:hover {
+    background: #cc0000;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255,0,0,0.6);
+}
+/* ========================= */
+/* LANÇAMENTO EM DESTAQUE 🔥 */
+/* ========================= */
+
+.highlight-release {
+    background: linear-gradient(135deg, #081c3b, #0d2a5c);
+    color: #fff;
+    padding: 60px 10%;
+    margin: 60px 0;
+    border-radius: 15px;
+}
+
+.release-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.release-image img {
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(255,235,59,0.4);
+}
+
+.release-info {
+    max-width: 500px;
+}
+
+.release-info h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.release-info p {
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.release-buttons a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+    margin-right: 15px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.youtube-release {
+    background: #FF0000;
+    color: #fff;
+}
+
+.youtube-release:hover {
+    background: #cc0000;
+    transform: scale(1.05);
+}
+
+.spotify-release {
+    background: #1DB954;
+    color: #fff;
+}
+
+.spotify-release:hover {
+    background: #17a74a;
+    transform: scale(1.05);
+}
+
+@media(max-width: 768px){
+    .release-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* ========================= */
+/* NOSSA VISÃO 🔥 */
+/* ========================= */
+
+.vision-section {
+    padding: 70px 10%;
+    text-align: center;
+    background: #ffffff;
+}
+
+.vision-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    border-left: 5px solid #081c3b;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.vision-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.vision-card {
+    background: #f9f9f9;
+    padding: 40px 25px;
+    border-radius: 15px;
+    transition: 0.3s;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.vision-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.vision-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.vision-card h3 {
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.vision-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
